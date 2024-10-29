@@ -28,23 +28,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     }, [value, inputValue])
 
 
-    const lock = () => {
-        if (!guessStatus.isMapGuessed) {
-            return {
-                filter: "blur(5px)",
-                '&::after': {
-                    content: '""',
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    background: "rgba(255, 255, 255, 0)",
-                    zIndex: 1,
-                }
-            }
-        }
-    }
+    const blur = () =>{if(!guessStatus.isMapGuessed) return {filter: "blur(5px)"}} 
 
     function guess() {
         if (value == roll.areaName) {
@@ -76,7 +60,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
             padding: 2,
             textAlign: "center",
             position: "relative",
-            ...lock()
+            ...blur()
         }}
             variant="outlined" >
             <Autocomplete
@@ -90,7 +74,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
                     setInputValue(newInputValue);
                 }}
                 options={areaNames}
-                disabled={guessStatus.isAreaGuessed}
+                disabled={!guessStatus.isMapGuessed}
                 renderInput={(params) => <TextField {...params}
                     label="Area"
                     size="small"
