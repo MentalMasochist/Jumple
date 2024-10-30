@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import MapGuess from "./MapGuess.jsx";
 import AreaGuess from "./AreaGuess.jsx";
 import ScreenNumberGuess from "./ScreenNumberGuess.jsx";
@@ -6,21 +6,22 @@ import { Paper, Grid2 } from "@mui/material";
 import ShareButton from './ShareButton.jsx';
 import ScreenImage from './ScreenImage.jsx';
 import * as Utils from '../Utils.js';
+import { useLocalState } from '../CustomHooks.js';
 
 const MainGuessArea = () => {
-    const [mistakeCount, setMistakeCount] = useState(0);
+    const [mistakeCount, setMistakeCount] = useLocalState(0, "mistakeCount");
 
-    const [guessStatus, setGuessStatus] = useState({
+    const [guessStatus, setGuessStatus] = useLocalState({
         isMapGuessed: false,
         isAreaGuessed: false,
         isScreenGuessed: false
-    })
+    }, "guessStatus")
 
-    const [wrongGuesses, setWrongGuesses] = useState({
+    const [wrongGuesses, setWrongGuesses] = useLocalState({
         map: 0,
         area: 0,
         screen: 0
-    })
+    }, "wrongGuesses")
 
     function incrementMistake(property) {
         setWrongGuesses(prevState => ({

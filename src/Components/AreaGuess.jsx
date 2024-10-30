@@ -6,6 +6,7 @@ import MapsJSON from '../mapsStructure.json';
 import { ScreenRoll } from "../ScreenRoll";
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
+import { useLocalState } from '../CustomHooks.js';
 
 
 const roll = ScreenRoll();
@@ -15,8 +16,8 @@ const initialAreas = MapsJSON.Maps[mapIndex].Areas.map(area => area.AreaName);
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [value, setValue] = useState(null);
     const [inputValue, setInputValue] = useState('');
-    const [guessedAreas, setGuessedAreas] = useState([]);
-    const [areaNames, setAreaNames] = useState(initialAreas);
+    const [guessedAreas, setGuessedAreas] = useLocalState([],"guessedAreas");
+    const [areaNames, setAreaNames] = useLocalState(initialAreas,"areaNames");
     const [disableButton, setDisableButton] = useState(true);
 
     useEffect(() => {
@@ -27,8 +28,6 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
         }
     }, [value, inputValue])
 
-
-    const blur = () =>{if(!guessStatus.isMapGuessed) return {filter: "blur(5px)"}} 
 
     function guess() {
         if (value == roll.areaName) {
@@ -60,11 +59,10 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
             padding: 2,
             textAlign: "center",
             position: "relative",
-            ...blur()
+            filter: guessStatus.isMapGuessed ? "blur(0px)" : "blur(5px)" 
         }}
             variant="outlined" >
             <Autocomplete
-
                 value={value}
                 onChange={(event, newValue) => {
                     setValue(newValue);
@@ -74,7 +72,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
                     setInputValue(newInputValue);
                 }}
                 options={areaNames}
-                disabled={!guessStatus.isMapGuessed}
+                disabled={!guessStatus.isMapGuessed || guessStatus.isAreaGuessed}    
                 renderInput={(params) => <TextField {...params}
                     label="Area"
                     size="small"

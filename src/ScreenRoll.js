@@ -1,11 +1,11 @@
 import MapsJSON from './mapsStructure.json';
-import { Random } from 'random';
 import { getSeed } from './getSeed';
+import seedrandom from 'seedrandom';
 
 const seed = await getSeed();
 
 export function ScreenRoll() {
-    const rng = new Random(seed);
+    const rng = seedrandom(seed); 
     const maps = MapsJSON.Maps;
     let totalScreens = 0;
 
@@ -15,8 +15,8 @@ export function ScreenRoll() {
         });
     });
 
-    const randomIndex = Math.floor(rng.float() * totalScreens);
-    
+    const randomIndex = Math.floor(rng() * totalScreens);
+
     let currentIndex = 0;
     for (let mapIndex = 0; mapIndex < maps.length; mapIndex++) {
         const map = maps[mapIndex];
@@ -26,7 +26,7 @@ export function ScreenRoll() {
                 const screenIndex = randomIndex - currentIndex;
                 const screenName = area.Screens[screenIndex];
                 
-                //DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
+                // DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
                 const screenPath = `Jumple/Maps/${map.MapName}/${area.AreaName.replace(/'/g, '%27')}/${screenName}`;
                 
                 return {

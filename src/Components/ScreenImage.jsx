@@ -1,43 +1,25 @@
-import { React, useEffect, useRef } from "react";
-import { Paper } from "@mui/material";
+import { React } from "react";
 import { ScreenRoll } from "../ScreenRoll";
-import { useState } from "react";
-import { Random } from "random";
 import { getSeed } from "../getSeed.js";
 import * as Utils from '../Utils.js';
+import { useOnUpdate, useLocalState } from "../CustomHooks.js";
+import seedrandom from 'seedrandom';
 
 const img = ScreenRoll().screenPath;
 const seed = await getSeed();
-
-const useOnUpdate = (callback, deps) => {
-    const isMountingRef = useRef(false);
-
-    useEffect(() => {
-        isMountingRef.current = true;
-    }, []);
-
-    useEffect(() => {
-        if (!isMountingRef.current) {
-            return callback();
-        } else {
-            isMountingRef.current = false;
-        }
-    }, deps);
-};
-
 
 const ScreenImage = ({ mistakeCount, guessStatus }) => {
     const initialZoom = 10;
     const { size: initialSize, minxvalue, maxxvalue } = Utils.calculateDimensions(initialZoom);
 
-    const rng = new Random(seed);
-    const randomXPosition = rng.float(minxvalue, maxxvalue);
-    const randomYPosition = rng.float(0, 100);
+    const rng = seedrandom(seed); 
+    const randomXPosition = minxvalue + rng() * (maxxvalue - minxvalue); 
+    const randomYPosition = rng() * 100; 
 
-    const [xPositionState, setxPositionState] = useState(randomXPosition);
-    const [yPositionState] = useState(randomYPosition);
-    const [zoomState, setZoomState] = useState(initialZoom);
-    const [sizeState, setSizeState] = useState(initialSize);
+    const [xPositionState, setxPositionState] = useLocalState(randomXPosition, "xPositionState");
+    const [yPositionState] = useLocalState(randomYPosition,"yPositionState");
+    const [zoomState, setZoomState] = useLocalState(initialZoom,"zoomState");
+    const [sizeState, setSizeState] = useLocalState(initialSize,"sizeState");
 
 
     useOnUpdate(() => {

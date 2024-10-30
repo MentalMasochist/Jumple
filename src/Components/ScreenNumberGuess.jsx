@@ -1,22 +1,15 @@
-import React from "react";
-import { useState } from "react";
-import { Button } from "@mui/material";
+import { React, useEffect, useState } from "react";
+import { Button, Paper, Grid2, Stack } from "@mui/material";
 import { ScreenRoll } from "../ScreenRoll";
-import { Paper } from "@mui/material";
-import { Grid2 } from "@mui/material";
-import { useEffect } from "react";
-import { Stack } from "@mui/material";
+import { useLocalState } from '../CustomHooks.js';
 
 const roll = ScreenRoll();
 
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [number, setNumber] = useState(1);
-    const [guessedNumbers, setGuessedNumbers] = useState([]);
+    const [guessedNumbers, setGuessedNumbers] = useLocalState([], "guessedNumbers");
     const [buttonDisableState, setButtonDisableState] = useState(false);
-
-
-    const blur = () =>{if(!guessStatus.isAreaGuessed) return {filter: "blur(5px)"}} 
 
     useEffect(() => {
         const numberMap = guessedNumbers.map(number => number.number);
@@ -65,7 +58,7 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
         <Paper sx={{
             padding: 2,
             textAlign: "center",
-            ...blur()
+            filter: guessStatus.isAreaGuessed ? "blur(0px)" : "blur(5px)"
         }} variant="outlined">
             <p style={{ fontSize: 100, margin: 0, }}>{number}</p>
 
@@ -77,7 +70,7 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
                     <Button fullWidth disabled={guessStatus.isScreenGuessed || !guessStatus.isAreaGuessed} onClick={increment} variant="outlined">{">"}</Button>
                 </Grid2>
                 <Grid2 size={12}>
-                    <Button onClick={() => guess(number)} disabled={buttonDisableState || !guessStatus.isAreaGuessed} size="small" sx={{ fontFamily: "JKFontMini", fontSize: "20px", padding: "0" }} fullWidth variant="contained">Guess screen number</Button>
+                    <Button onClick={() => guess(number)} disabled={buttonDisableState || !guessStatus.isAreaGuessed || guessStatus.isScreenGuessed} size="small" sx={{ fontFamily: "JKFontMini", fontSize: "20px", padding: "0" }} fullWidth variant="contained">Guess screen number</Button>
                 </Grid2>
 
             </Grid2>
