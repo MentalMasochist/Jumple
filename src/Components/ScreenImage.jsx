@@ -1,25 +1,28 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { ScreenRoll } from "../ScreenRoll";
 import { getSeed } from "../getSeed.js";
 import * as Utils from '../Utils.js';
-import { useOnUpdate, useLocalState } from "../CustomHooks.js";
+import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
 import seedrandom from 'seedrandom';
 
 const img = ScreenRoll().screenPath;
 const seed = await getSeed();
 
-const ScreenImage = ({ mistakeCount, guessStatus }) => {
+const ScreenImage = ({ mistakeCount, guessStatus, hardModeState }) => {
     const initialZoom = 10;
     const { size: initialSize, minxvalue, maxxvalue } = Utils.calculateDimensions(initialZoom);
 
-    const rng = seedrandom(seed); 
-    const randomXPosition = minxvalue + rng() * (maxxvalue - minxvalue); 
-    const randomYPosition = rng() * 100; 
+    const rng = seedrandom(seed);
+    const randomXPosition = minxvalue + rng() * (maxxvalue - minxvalue);
+    const randomYPosition = rng() * 100;
 
-    const [xPositionState, setxPositionState] = useLocalState(randomXPosition, "xPositionState");
-    const [yPositionState] = useLocalState(randomYPosition,"yPositionState");
-    const [zoomState, setZoomState] = useLocalState(initialZoom,"zoomState");
-    const [sizeState, setSizeState] = useLocalState(initialSize,"sizeState");
+    const rotations = [0, 90, 180, 270];
+    const randomRotation = rotations[Math.floor(rng() * 4)];
+
+    const [xPositionState, setxPositionState] = useDailyLocalState(randomXPosition, "xPositionState");
+    const [yPositionState] = useDailyLocalState(randomYPosition, "yPositionState");
+    const [zoomState, setZoomState] = useDailyLocalState(initialZoom, "zoomState");
+    const [sizeState, setSizeState] = useDailyLocalState(initialSize, "sizeState");
 
 
     useOnUpdate(() => {
@@ -53,21 +56,44 @@ const ScreenImage = ({ mistakeCount, guessStatus }) => {
         setxPositionState(50);
     }
 
+
     return (
+        <div style={{
+            aspectRatio: 4 / 3,
+            width: "100%",
+            maxWidth: "28rem",
+            border: "8px solid #121212",
+            borderRadius: "3px",
+            overflow: "hidden",
+            backgroundColor: "#121212",
+            position: "relative"
+        }}>
+            {(hardModeState && !guessStatus.isScreenGuessed) &&
+                <div style={{
+                    display: 'flex',
+                    width: '100%',
+                    height: "100%",
+                    position: "absolute"
+                }}>
+                    <div style={{ flex: 1, backgroundColor: "#121212", zIndex: 1}}></div>
+                    <div style={{ width: "auto", height: "100%", aspectRatio: "1/1" }}></div>
+                    <div style={{ flex: 1, backgroundColor: "#121212", zIndex: 1 }}></div>
+                </div>
+            }
 
             <div style={{
-                aspectRatio: 4 / 3,
-                width:"100%",
-                maxWidth:"28rem",
+                width: "100%",
+                height: "100%",
                 background: `url('${img}')`,
                 backgroundRepeat: "no-repeat",
                 backgroundPositionX: `${xPositionState}%`,
                 backgroundPositionY: `${yPositionState}%`,
                 backgroundSize: `${sizeState}%`,
-                borderRadius: 0.000001, //xd
-                margin: "0.5rem",
-                outline: "8px solid #121212"
-            }}></div>
+                rotate: (hardModeState && !guessStatus.isScreenGuessed) ? `${randomRotation}deg` : "0deg",
+                filter: `grayscale(${(hardModeState && !guessStatus.isScreenGuessed) ? `1` : "0"})`
+            }}>
+            </div>
+        </div>
 
     )
 }

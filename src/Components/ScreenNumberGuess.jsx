@@ -1,14 +1,14 @@
 import { React, useEffect, useState } from "react";
 import { Button, Paper, Grid2, Stack } from "@mui/material";
 import { ScreenRoll } from "../ScreenRoll";
-import { useLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../CustomHooks.js';
 
 const roll = ScreenRoll();
 
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [number, setNumber] = useState(1);
-    const [guessedNumbers, setGuessedNumbers] = useLocalState([], "guessedNumbers");
+    const [guessedNumbers, setGuessedNumbers] = useDailyLocalState([], "guessedNumbers");
     const [buttonDisableState, setButtonDisableState] = useState(false);
 
     useEffect(() => {

@@ -6,18 +6,20 @@ import { Paper, Grid2 } from "@mui/material";
 import ShareButton from './ShareButton.jsx';
 import ScreenImage from './ScreenImage.jsx';
 import * as Utils from '../Utils.js';
-import { useLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../CustomHooks.js';
+import HardModeCheckbox from './HardModeCheckbox.jsx';
 
 const MainGuessArea = () => {
-    const [mistakeCount, setMistakeCount] = useLocalState(0, "mistakeCount");
+    const [mistakeCount, setMistakeCount] = useDailyLocalState(0, "mistakeCount");
+    const [hardModeState, setHardModeState] = useDailyLocalState(true, "hardmode");
 
-    const [guessStatus, setGuessStatus] = useLocalState({
+    const [guessStatus, setGuessStatus] = useDailyLocalState({
         isMapGuessed: false,
         isAreaGuessed: false,
         isScreenGuessed: false
     }, "guessStatus")
 
-    const [wrongGuesses, setWrongGuesses] = useLocalState({
+    const [wrongGuesses, setWrongGuesses] = useDailyLocalState({
         map: 0,
         area: 0,
         screen: 0
@@ -34,14 +36,16 @@ const MainGuessArea = () => {
 
     return (
         <>
-            <ScreenImage mistakeCount={mistakeCount} guessStatus={guessStatus} />
+            <ScreenImage mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState}/>
 
             <div style={{ display: "flex" }}>
-                <Paper variant="outline" sx={{ padding: "0.7rem", borderTopLeftRadius: 0, borderTopRightRadius: 0, marginBottom: "0.5rem" }}>
+                <HardModeCheckbox hardModeState={hardModeState} setHardModeState={setHardModeState} guessStatus={guessStatus}/>
+                
+                <Paper variant="outline" sx={{ padding: "0.7rem", borderTopLeftRadius: 0, borderTopRightRadius: 0, marginBottom: "0.5rem", }}>
                     <p style={{ margin: 0, fontSize: "20px", color: guessStatus.isScreenGuessed ? Utils.gradientColor(mistakeCount) : "white" }}>Mistakes: {mistakeCount}</p>
                 </Paper>
 
-                <ShareButton wrongGuesses={wrongGuesses} mistakeCount={mistakeCount} guessStatus={guessStatus} />
+                <ShareButton wrongGuesses={wrongGuesses} mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState}/>
             </div>
 
             <Grid2 container spacing={2} sx={{ maxWidth: "35rem" }}>

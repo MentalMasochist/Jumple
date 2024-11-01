@@ -13,14 +13,12 @@ async function checkDate() {
     }
 }
 
-//<p style={{color: "white", fontSize: "100px"}}>site down for 3 mins</p>
-
 const startApp = async () => {
     await checkDate();
     createRoot(document.getElementById('root')).render(
         <StrictMode>
             <App />
-        </StrictMode>,
+        </StrictMode>
     )
 }
 startApp();

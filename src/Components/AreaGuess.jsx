@@ -6,7 +6,7 @@ import MapsJSON from '../mapsStructure.json';
 import { ScreenRoll } from "../ScreenRoll";
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
-import { useLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../CustomHooks.js';
 
 
 const roll = ScreenRoll();
@@ -16,8 +16,8 @@ const initialAreas = MapsJSON.Maps[mapIndex].Areas.map(area => area.AreaName);
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [value, setValue] = useState(null);
     const [inputValue, setInputValue] = useState('');
-    const [guessedAreas, setGuessedAreas] = useLocalState([],"guessedAreas");
-    const [areaNames, setAreaNames] = useLocalState(initialAreas,"areaNames");
+    const [guessedAreas, setGuessedAreas] = useDailyLocalState([],"guessedAreas");
+    const [areaNames, setAreaNames] = useDailyLocalState(initialAreas,"areaNames");
     const [disableButton, setDisableButton] = useState(true);
 
     useEffect(() => {

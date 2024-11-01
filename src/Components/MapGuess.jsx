@@ -5,13 +5,13 @@ import { ScreenRoll } from "../ScreenRoll";
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
-import { useLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../CustomHooks.js';
 
 const mapNames = MapsJSON.Maps.map(map => map.MapName);
 const roll = ScreenRoll();
 
 const MapGuess = ({ incrementMistake, setGuessStatus }) => {
-    const [buttonStates, setButtonStates] = useLocalState({},"mapGuessButtonStates");
+    const [buttonStates, setButtonStates] = useDailyLocalState({},"mapGuessButtonStates");
 
     const handleClick = (map) => {
         if (map == roll.mapName) {

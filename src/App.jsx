@@ -1,10 +1,9 @@
-import { React, useEffect } from "react";
+import { React } from "react";
 import "./styles.css";
 import MainGuessArea from './Components/MainGuessArea';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Timer from "./Components/Timer";
 import { Grid2 } from "@mui/material";
-import { getSeed } from "./getSeed";
 
 const darkTheme = createTheme({
     palette: {
