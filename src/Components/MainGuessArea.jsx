@@ -8,6 +8,7 @@ import ScreenImage from './ScreenImage.jsx';
 import * as Utils from '../Utils.js';
 import { useDailyLocalState } from '../CustomHooks.js';
 import HardModeCheckbox from './HardModeCheckbox.jsx';
+import MistakeCount from './MistakeCount.jsx';
 
 const MainGuessArea = () => {
     const [mistakeCount, setMistakeCount] = useDailyLocalState(0, "mistakeCount");
@@ -36,16 +37,14 @@ const MainGuessArea = () => {
 
     return (
         <>
-            <ScreenImage mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState}/>
+            <ScreenImage mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState} />
 
             <div style={{ display: "flex" }}>
-                <HardModeCheckbox hardModeState={hardModeState} setHardModeState={setHardModeState} guessStatus={guessStatus}/>
-                
-                <Paper variant="outline" sx={{ padding: "0.7rem", borderTopLeftRadius: 0, borderTopRightRadius: 0, marginBottom: "0.5rem", }}>
-                    <p style={{ margin: 0, fontSize: "20px", color: guessStatus.isScreenGuessed ? Utils.gradientColor(mistakeCount) : "white" }}>Mistakes: {mistakeCount}</p>
-                </Paper>
+                <HardModeCheckbox hardModeState={hardModeState} setHardModeState={setHardModeState} guessStatus={guessStatus} />
 
-                <ShareButton wrongGuesses={wrongGuesses} mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState}/>
+                <MistakeCount mistakeCount={mistakeCount} guessStatus={guessStatus} />
+
+                <ShareButton wrongGuesses={wrongGuesses} mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState} />
             </div>
 
             <Grid2 container spacing={2} sx={{ maxWidth: "35rem" }}>

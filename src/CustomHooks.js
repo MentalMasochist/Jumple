@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { getSeed } from "./getSeed";
 
 export const useOnUpdate = (callback, deps) => {
     const isMountingRef = useRef(false);

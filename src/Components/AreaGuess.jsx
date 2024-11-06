@@ -16,8 +16,8 @@ const initialAreas = MapsJSON.Maps[mapIndex].Areas.map(area => area.AreaName);
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [value, setValue] = useState(null);
     const [inputValue, setInputValue] = useState('');
-    const [guessedAreas, setGuessedAreas] = useDailyLocalState([],"guessedAreas");
-    const [areaNames, setAreaNames] = useDailyLocalState(initialAreas,"areaNames");
+    const [guessedAreas, setGuessedAreas] = useDailyLocalState([], "guessedAreas");
+    const [areaNames, setAreaNames] = useDailyLocalState(initialAreas, "areaNames");
     const [disableButton, setDisableButton] = useState(true);
 
     useEffect(() => {
@@ -59,7 +59,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
             padding: 2,
             textAlign: "center",
             position: "relative",
-            filter: guessStatus.isMapGuessed ? "blur(0px)" : "blur(5px)" 
+            filter: guessStatus.isMapGuessed ? "blur(0px)" : "blur(5px)"
         }}
             variant="outlined" >
             <Autocomplete
@@ -72,7 +72,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
                     setInputValue(newInputValue);
                 }}
                 options={areaNames}
-                disabled={!guessStatus.isMapGuessed || guessStatus.isAreaGuessed}    
+                disabled={!guessStatus.isMapGuessed || guessStatus.isAreaGuessed}
                 renderInput={(params) => <TextField {...params}
                     label="Area"
                     size="small"

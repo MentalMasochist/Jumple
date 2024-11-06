@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
+import { getSeed } from "../getSeed";
+
+const date = await getSeed();
 
 const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState }) => {
     const [isCoppied, setIsCoppied] = useState(false);
@@ -8,8 +11,6 @@ const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState })
     const display = guessStatus.isScreenGuessed ? "inline" : "none";
 
     function clipboardShare() {
-        const date = new Date().toISOString().slice(0, 10);
-
         const generateSquares = (count) => '🟥'.repeat(count) + '🟩';
 
         const mapSquares = generateSquares(wrongGuesses.map);

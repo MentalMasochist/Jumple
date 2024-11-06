@@ -60,7 +60,7 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
             textAlign: "center",
             filter: guessStatus.isAreaGuessed ? "blur(0px)" : "blur(5px)"
         }} variant="outlined">
-            <p style={{ fontSize: 100, margin: 0, }}>{number}</p>
+            <p style={{ fontSize: 100, margin: 0 }}>{number}</p>
 
             <Grid2 container spacing={1}>
                 <Grid2 size={6}>
@@ -70,9 +70,15 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
                     <Button fullWidth disabled={guessStatus.isScreenGuessed || !guessStatus.isAreaGuessed} onClick={increment} variant="outlined">{">"}</Button>
                 </Grid2>
                 <Grid2 size={12}>
-                    <Button onClick={() => guess(number)} disabled={buttonDisableState || !guessStatus.isAreaGuessed || guessStatus.isScreenGuessed} size="small" sx={{ fontFamily: "JKFontMini", fontSize: "20px", padding: "0" }} fullWidth variant="contained">Guess screen number</Button>
+                    <Button onClick={() => guess(number)}
+                        disabled={buttonDisableState || !guessStatus.isAreaGuessed || guessStatus.isScreenGuessed}
+                        size="small"
+                        sx={{ fontFamily: "JKFontMini", fontSize: "20px", padding: "0" }}
+                        fullWidth
+                        variant="contained">
+                        Guess screen number
+                    </Button>
                 </Grid2>
-
             </Grid2>
             <Stack direction="row" spacing={1} sx={{ justifyContent: "center", flexWrap: "wrap", marginTop: 1 }}>
                 {guessedNumbers.map(number => {
@@ -87,8 +93,6 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
                     )
                 })}
             </Stack>
-
-
         </Paper>
     )
 }
