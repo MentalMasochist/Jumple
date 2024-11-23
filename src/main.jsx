@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import { getSeed } from './getSeed.js';
+import { getSeeds } from './Seeds.js';
 
 async function checkDate() {
-    const currentDate = await getSeed(); 
+    const { currentDate } = await getSeeds();
     const storedDate = JSON.parse(localStorage.getItem("lastDate")) || "";
 
     if (currentDate !== storedDate) {

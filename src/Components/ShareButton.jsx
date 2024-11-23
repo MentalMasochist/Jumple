@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
-import { getSeed } from "../getSeed";
+import { getSeeds } from "../Seeds.js";
 
-const date = await getSeed();
+const { currentDate } = await getSeeds();
 
 const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState }) => {
     const [isCoppied, setIsCoppied] = useState(false);
@@ -18,7 +18,7 @@ const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState })
         const screenSquares = generateSquares(wrongGuesses.screen);
         const hardModeFinish = hardModeState ? "✔" : "❌";
 
-        const copyText = `Jumple ${date} Mistakes: ${mistakeCount}\n\nMap guesses: ${mapSquares}\nArea guesses: ${areaSquares}\nScreen guesses: ${screenSquares}\nHard mode: ${hardModeFinish}`;
+        const copyText = `Jumple ${currentDate} Mistakes: ${mistakeCount}\n\nMap guesses: ${mapSquares}\nArea guesses: ${areaSquares}\nScreen guesses: ${screenSquares}\nHard mode: ${hardModeFinish}`;
 
         navigator.clipboard.writeText(copyText);
         setIsCoppied(true);
