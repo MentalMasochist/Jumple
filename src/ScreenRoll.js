@@ -5,7 +5,7 @@ import seedrandom from 'seedrandom';
 
 
 // DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
-const retardMoment = "Jumple/";
+const retardMoment = "";
 
 const { nexileSeeds, customSeeds } = await getSeeds();
 
