@@ -9,6 +9,11 @@ const roll = {
 }
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
+    const screenCap = {
+        nexile: 10,
+        custom: 20
+    }
+
     const [number, setNumber] = useState(1);
     const [guessedNumbers, setGuessedNumbers] = useDailyLocalState([], "guessedNumbers", jumpleMode);
     const [buttonDisableState, setButtonDisableState] = useState(false);
@@ -25,7 +30,7 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jump
 
 
     function increment() {
-        if (number >= 10) return;
+        if (number >= screenCap[jumpleMode]) return;
         setNumber(number + 1);
     }
 
