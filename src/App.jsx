@@ -1,9 +1,12 @@
-import { React } from "react";
+import { React, useState } from "react";
 import "./styles.css";
 import MainGuessArea from './Components/MainGuessArea';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Timer from "./Components/Timer";
-import { Grid2 } from "@mui/material";
+import { Grid2, Tab } from "@mui/material";
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel';
 
 const darkTheme = createTheme({
     palette: {
@@ -12,6 +15,13 @@ const darkTheme = createTheme({
 });
 
 const App = () => {
+    const [jumpleState, setJumpleState] = useState('Nexile maps');
+
+    function handleJumpleMode(e, newValue) {
+        setJumpleState(newValue);
+    }
+
+
     return (
         <>
             <div className="topBar">
@@ -28,9 +38,48 @@ const App = () => {
                 </Grid2>
             </div>
 
-            <ThemeProvider theme={darkTheme}>
-                <MainGuessArea />
-            </ThemeProvider>
+
+            <TabContext value={jumpleState}>
+                <div className="jumpleChoice">
+                    <TabList onChange={handleJumpleMode}>
+                        <Tab value="Nexile maps" label={"Nexile maps"} sx={{
+                            color: "white",
+                            fontFamily: 'JKFontBold'
+                        }} />
+                        <Tab value="Custom maps" label={"Custom maps"} sx={{
+                            color: "white",
+                            fontFamily: 'JKFontBold'
+                        }} />
+                    </TabList>
+                </div>
+
+                <TabPanel value={"Nexile maps"} sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: 0
+                }}>
+                    <ThemeProvider theme={darkTheme}>
+                        <MainGuessArea jumpleMode={"nexile"} />
+                    </ThemeProvider>
+                </TabPanel>
+
+                <TabPanel value={"Custom maps"} sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: 0
+                }}>
+                    <ThemeProvider theme={darkTheme}>
+                        <MainGuessArea jumpleMode={"custom"} />
+                    </ThemeProvider>
+                </TabPanel>
+
+            </TabContext>
+
+
+
+
 
         </>
     )

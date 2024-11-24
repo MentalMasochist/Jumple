@@ -8,7 +8,8 @@ async function checkDate() {
     const storedDate = JSON.parse(localStorage.getItem("lastDate")) || "";
 
     if (currentDate !== storedDate) {
-        localStorage.removeItem("dailyGuessStates");
+        localStorage.removeItem("nexile");
+        localStorage.removeItem("custom");
         localStorage.setItem("lastDate", JSON.stringify(currentDate));
     }
 }

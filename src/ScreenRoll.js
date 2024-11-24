@@ -1,40 +1,71 @@
-import MapsJSON from './mapsStructure.json';
+import NexileMapsJSON from './nexileMapsJSON.json';
+import CustomMapsJSON from './customMapsJSON.json';
 import { getSeeds } from './Seeds';
 import seedrandom from 'seedrandom';
 
-const { randomAreaSeed, randomScreenSeed } = await getSeeds();
+
+// DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
+const retardMoment = "Jumple/";
+
+const { nexileSeeds, customSeeds } = await getSeeds();
 
 export function ScreenRoll() {
-    const maps = MapsJSON.Maps;
+    const NexileMaps = NexileMapsJSON.NexileMaps;
+    const CustomMaps = CustomMapsJSON.CustomMaps;
 
-    const allAreas = [];
-    maps.forEach((map, mapIndex) => {
-        map.Areas.forEach((area, areaIndex) => {
-            allAreas.push({ map, mapIndex, area, areaIndex });
+    const NexileAreas = [];
+    NexileMaps.forEach((nexileMap, nexileMapIndex) => {
+        nexileMap.Areas.forEach((nexileArea, nexileAreaIndex) => {
+            NexileAreas.push({ nexileMap, nexileMapIndex, nexileArea, nexileAreaIndex });
         });
     });
 
+    const randomNexileAreaIndex = Math.floor(nexileSeeds.randomAreaSeed * NexileAreas.length);
+    const { nexileMap, nexileMapIndex, nexileArea, nexileAreaIndex } = NexileAreas[randomNexileAreaIndex];
 
-    const randomAreaIndex = Math.floor(randomAreaSeed * allAreas.length);
-    const { map, mapIndex, area, areaIndex } = allAreas[randomAreaIndex];
+    const nexileScreenIndex = Math.floor(nexileSeeds.randomScreenSeed * nexileArea.Screens.length);
+    const nexileScreenName = nexileArea.Screens[nexileScreenIndex];
 
-    const screenIndex = Math.floor(randomScreenSeed * area.Screens.length);
-    const screenName = area.Screens[screenIndex];
 
-    // DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
-    const screenPath = `Jumple/Maps/${map.MapName}/${area.AreaName.replace(/'/g, '%27')}/${screenName}`;
+    const nexileScreenPath = `${retardMoment}NexileMaps/${nexileMap.MapName}/${nexileArea.AreaName.replace(/'/g, '%27')}/${nexileScreenName}`;
+
+    const CustomAreas = [];
+    CustomMaps.forEach((customMap, customMapIndex) => {
+        customMap.Areas.forEach((customArea, customAreaIndex) => {
+            CustomAreas.push({ customMap, customMapIndex, customArea, customAreaIndex });
+        });
+    });
+
+    const randomCustomAreaIndex = Math.floor(customSeeds.randomAreaSeed * CustomAreas.length);
+    const { customMap, customMapIndex, customArea, customAreaIndex } = CustomAreas[randomCustomAreaIndex];
+
+    const customScreenIndex = Math.floor(customSeeds.randomScreenSeed * customArea.Screens.length);
+    const customScreenName = customArea.Screens[customScreenIndex];
+
+    const customScreenPath = `${retardMoment}CustomMaps/${customMap.MapName}/${customArea.AreaName.replace(/'/g, '%27')}/${customScreenName}`;
+
 
     return {
-        mapName: map.MapName,
-        mapIndex: mapIndex,
-        areaName: area.AreaName,
-        areaIndex: areaIndex,
-        screenName: screenName,
-        screenNumber: screenIndex + 1,
-        screenPath: screenPath
+        NexileRoll: {
+            mapName: nexileMap.MapName,
+            mapIndex: nexileMapIndex,
+            areaName: nexileArea.AreaName,
+            areaIndex: nexileAreaIndex,
+            screenName: nexileScreenName,
+            screenNumber: nexileScreenIndex + 1,
+            screenPath: nexileScreenPath
+        },
+        CustomRoll: {
+            mapName: customMap.MapName,
+            mapIndex: customMapIndex,
+            areaName: customArea.AreaName,
+            areaIndex: customAreaIndex,
+            screenName: customScreenName,
+            screenNumber: customScreenIndex + 1,
+            screenPath: customScreenPath
+        }
     };
 }
-
 
 /*  simulation shit
 

@@ -5,8 +5,12 @@ import { getSeeds } from "../Seeds.js";
 
 const { currentDate } = await getSeeds();
 
-const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState }) => {
+const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, jumpleMode }) => {
     const [isCoppied, setIsCoppied] = useState(false);
+    const mode = {
+        nexile: "(Nexile Maps)",
+        custom: "(Custom Maps)"
+    }
 
     const display = guessStatus.isScreenGuessed ? "inline" : "none";
 
@@ -18,7 +22,7 @@ const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState })
         const screenSquares = generateSquares(wrongGuesses.screen);
         const hardModeFinish = hardModeState ? "✔" : "❌";
 
-        const copyText = `Jumple ${currentDate} Mistakes: ${mistakeCount}\n\nMap guesses: ${mapSquares}\nArea guesses: ${areaSquares}\nScreen guesses: ${screenSquares}\nHard mode: ${hardModeFinish}`;
+        const copyText = `Jumple ${mode[jumpleMode]} ${currentDate} Mistakes: ${mistakeCount}\n\nMap guesses: ${mapSquares}\nArea guesses: ${areaSquares}\nScreen guesses: ${screenSquares}\nHard mode: ${hardModeFinish}`;
 
         navigator.clipboard.writeText(copyText);
         setIsCoppied(true);

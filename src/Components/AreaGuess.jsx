@@ -2,22 +2,29 @@ import React from "react";
 import { useState, useEffect } from "react";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import MapsJSON from '../mapsStructure.json';
+import NexileMapsJSON from '../nexileMapsJSON.json';
+import CustomMapsJSON from '../customMapsJSON.json';
 import { ScreenRoll } from "../ScreenRoll";
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import { useDailyLocalState } from '../CustomHooks.js';
 
+const initialAreas = {
+    nexile: NexileMapsJSON.NexileMaps[ScreenRoll().NexileRoll.mapIndex].Areas.map(area => area.AreaName),
+    custom: CustomMapsJSON.CustomMaps[ScreenRoll().CustomRoll.mapIndex].Areas.map(area => area.AreaName)
+}
 
-const roll = ScreenRoll();
-const mapIndex = roll.mapIndex;
-const initialAreas = MapsJSON.Maps[mapIndex].Areas.map(area => area.AreaName);
+const roll = {
+    nexile: ScreenRoll()["NexileRoll"],
+    custom: ScreenRoll()["CustomRoll"]
+}
 
-const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
+
+const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
     const [value, setValue] = useState(null);
     const [inputValue, setInputValue] = useState('');
-    const [guessedAreas, setGuessedAreas] = useDailyLocalState([], "guessedAreas");
-    const [areaNames, setAreaNames] = useDailyLocalState(initialAreas, "areaNames");
+    const [guessedAreas, setGuessedAreas] = useDailyLocalState([], "guessedAreas", jumpleMode);
+    const [areaNames, setAreaNames] = useDailyLocalState(initialAreas[jumpleMode], "areaNames", jumpleMode);
     const [disableButton, setDisableButton] = useState(true);
 
     useEffect(() => {
@@ -30,7 +37,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
 
 
     function guess() {
-        if (value == roll.areaName) {
+        if (value == roll[jumpleMode].areaName) {
             setGuessedAreas(oldAreas => [...oldAreas, {
                 name: value,
                 isCorrect: true
@@ -41,7 +48,6 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
                 ...prevState,
                 "isAreaGuessed": true
             }));
-
         } else {
             setAreaNames(areaNames.filter(area => area != value));
             setGuessedAreas(oldAreas => [...oldAreas, {

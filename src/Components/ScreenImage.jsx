@@ -4,23 +4,37 @@ import { getSeeds } from "../Seeds.js";
 import * as Utils from '../Utils.js';
 import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
 
-const img = ScreenRoll().screenPath;
-const { randomXSeed, randomYSeed, randomRotationSeed } = await getSeeds();
 
-const ScreenImage = ({ mistakeCount, guessStatus, hardModeState }) => {
+const { nexileSeeds, customSeeds } = await getSeeds();
+
+const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) => {
+
+    const rolls = {
+        nexile: ScreenRoll().NexileRoll.screenPath,
+        custom: ScreenRoll().CustomRoll.screenPath
+    };
+    const img = rolls[jumpleMode];
+
+    const seeds = {
+        nexile: nexileSeeds,
+        custom: customSeeds
+    }
+    const seed = seeds[jumpleMode];
+
+
     const initialZoom = 10;
     const { size: initialSize, minxvalue, maxxvalue } = Utils.calculateDimensions(initialZoom);
 
-    const randomXPosition = minxvalue + randomXSeed * (maxxvalue - minxvalue);
-    const randomYPosition = randomYSeed * 100;
+    const randomXPosition = minxvalue + seed.randomXSeed * (maxxvalue - minxvalue);
+    const randomYPosition = seed.randomYSeed * 100;
 
     const rotations = [0, 90, 180, -90];
-    const randomRotation = rotations[Math.floor(randomRotationSeed * 4)];
+    const randomRotation = rotations[Math.floor(seed.randomRotationSeed * 4)];
 
-    const [xPositionState, setxPositionState] = useDailyLocalState(randomXPosition, "xPositionState");
-    const [yPositionState] = useDailyLocalState(randomYPosition, "yPositionState");
-    const [zoomState, setZoomState] = useDailyLocalState(initialZoom, "zoomState");
-    const [sizeState, setSizeState] = useDailyLocalState(initialSize, "sizeState");
+    const [xPositionState, setxPositionState] = useDailyLocalState(randomXPosition, "xPositionState", jumpleMode);
+    const [yPositionState] = useDailyLocalState(randomYPosition, "yPositionState", jumpleMode);
+    const [zoomState, setZoomState] = useDailyLocalState(initialZoom, "zoomState", jumpleMode);
+    const [sizeState, setSizeState] = useDailyLocalState(initialSize, "sizeState", jumpleMode);
 
 
     useOnUpdate(() => {
@@ -78,8 +92,8 @@ const ScreenImage = ({ mistakeCount, guessStatus, hardModeState }) => {
                 rotate: (hardModeState && !guessStatus.isScreenGuessed) ? `${randomRotation}deg` : "0deg",
                 filter: `grayscale(${(hardModeState && !guessStatus.isScreenGuessed) ? `1` : "0"})`,
                 transition: guessStatus.isScreenGuessed && hardModeState
-                    ? "rotate 1s, background-size ease-out 1s 1s, background-position-x cubic-bezier(1, 0, 0.85, 0.85) 0.9s 1s, filter 1s" // Staggered: rotate first
-                    : "background-size 1s, background-position-x 1s, rotate 1s, filter 1s", // Simultaneous animations
+                    ? "rotate 1s, background-size ease-out 1s 1s, background-position-x cubic-bezier(1, 0, 0.85, 0.85) 0.9s 1s, filter 1s"
+                    : "background-size 1s, background-position-x 1s, rotate 1s, filter 1s",
             }}>
             </div>
         </div>

@@ -3,12 +3,14 @@ import { Button, Paper, Grid2, Stack } from "@mui/material";
 import { ScreenRoll } from "../ScreenRoll";
 import { useDailyLocalState } from '../CustomHooks.js';
 
-const roll = ScreenRoll();
+const roll = {
+    nexile: ScreenRoll()["NexileRoll"],
+    custom: ScreenRoll()["CustomRoll"]
+}
 
-
-const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
+const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
     const [number, setNumber] = useState(1);
-    const [guessedNumbers, setGuessedNumbers] = useDailyLocalState([], "guessedNumbers");
+    const [guessedNumbers, setGuessedNumbers] = useDailyLocalState([], "guessedNumbers", jumpleMode);
     const [buttonDisableState, setButtonDisableState] = useState(false);
 
     useEffect(() => {
@@ -33,7 +35,7 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus }) =>
     }
 
     function guess(guessedNumber) {
-        if (guessedNumber == roll.screenNumber) {
+        if (guessedNumber == roll[jumpleMode].screenNumber) {
             setGuessedNumbers(oldNumbers => [...oldNumbers, {
                 number: number,
                 isCorrect: true

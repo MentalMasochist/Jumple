@@ -17,9 +17,7 @@ export const useOnUpdate = (callback, deps) => {
 };
 
 
-export const useDailyLocalState = (initialValue, stateKey) => {
-    const storageKey = "dailyGuessStates";
-
+export const useDailyLocalState = (initialValue, stateKey, storageKey) => {
     const [state, setState] = useState(() => {
         try {
             const storedData = JSON.parse(localStorage.getItem(storageKey)) || {};

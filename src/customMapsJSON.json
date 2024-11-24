@@ -1,0 +1,2463 @@
+{
+    "CustomMaps": [
+        {
+            "MapName": "Babe of Ascension",
+            "Areas": [
+                {
+                    "AreaName": "Fallen Temple",
+                    "Screens": [
+                        "Fallen Temple (1).png",
+                        "Fallen Temple (2).png",
+                        "Fallen Temple (3).png",
+                        "Fallen Temple (4).png",
+                        "Fallen Temple (5).png",
+                        "Fallen Temple (6).png",
+                        "Fallen Temple (7).png"
+                    ]
+                },
+                {
+                    "AreaName": "Larimar Mines",
+                    "Screens": [
+                        "mines 1.png",
+                        "mines 2.png",
+                        "mines 3.png",
+                        "mines 4.png",
+                        "mines 5.png",
+                        "mines 6.png",
+                        "mines 7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Well",
+                    "Screens": [
+                        "well 1.png",
+                        "well 2.png",
+                        "well 3.png",
+                        "well 4.png",
+                        "well 5.png",
+                        "well 6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Deadcrown Woods",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Rustic Chalet",
+                    "Screens": [
+                        "chalet 1.png",
+                        "chalet 2.png",
+                        "chalet 3.png",
+                        "chalet 4.png",
+                        "chalet 5.png",
+                        "chalet 6.png",
+                        "chalet 7.png",
+                        "chalet 8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Lofty Empire",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Radiant Factory",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Retro Tower",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "01010100 01101001 01110100 01101100 01100101 01010011 01100011 01110010 01100101 01100101 01101110",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Palace of Mirrors",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Abstract Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Ascension",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Nest",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Dimension",
+            "Areas": [
+                {
+                    "AreaName": "Ashen Catacomb",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Fury of Vulcanus",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Hollow Pillar",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Abyss",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Purple Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Digital Frontier",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Mire of Greed",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Haunted Tower",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Magnetic Skyscraper",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Stellar Interceptor",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Light",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Reverse Dimension",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Another Dimension",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Dimension+",
+            "Areas": [
+                {
+                    "AreaName": "Ashen Dungeon",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Rule of Aeolus",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "2Bit Pillars",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Chaos",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Scarlet Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Serene Frontier",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Mire of Ecstasy",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Submerged Tower",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Invaded Galaxy",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Forsaken Interceptor",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Ray",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The True Tower of Light",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Last Dimension",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Inferno",
+            "Areas": [
+                {
+                    "AreaName": "Ice Hideout",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Stalactite Cave",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Soul Purification Plant",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Hell Great Library",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Intense Heat Wind Hell",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "MYSTERIOUS POWER RAINS",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Doodlebug",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Gorge",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png"
+                    ]
+                },
+                {
+                    "AreaName": "Seedbed",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Spider Thread",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Inferno",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Secret of RINFONE",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "15.png",
+                        "16.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Memories",
+            "Areas": [
+                {
+                    "AreaName": "Tinycrown Woods",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png"
+                    ]
+                },
+                {
+                    "AreaName": "Antique Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Colossal Cube",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Yummyburg",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Eternal Frontier",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "True Pass",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Our Memories",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Symmetry",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "End of Your Memories",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Redemption",
+            "Areas": [
+                {
+                    "AreaName": "Unused Prelude",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Chemical Powerplant",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Neon Fractal World",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Woods of Sorrow",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Eternal Winter",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "15.png",
+                        "16.png",
+                        "17.png",
+                        "18.png",
+                        "19.png",
+                        "2.png",
+                        "20.png",
+                        "21.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Control Matrix",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Containment Breach",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Neon Grid World",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Needle Void",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Tower of Dissociation",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "KZ_VAILD",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "I didn't feel like making anything in this room",
+                    "Screens": [
+                        "1.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of the Heavens",
+            "Areas": [
+                {
+                    "AreaName": "Icy Caverns",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Misty Woods",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Lost Fortress",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Cloudtops",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Cosmos",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Limbo",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Heavenly Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Babel",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of the Realms",
+            "Areas": [
+                {
+                    "AreaName": "Esoteric Chasm",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Laughterhouse",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Solar Limbo",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Barren Ether",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Chemical fortress",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Uhh... Bloody Hell",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Void",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Infe-Station",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Basalt Pinnacle",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The REAL Void",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "kz_null",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Transcension",
+            "Areas": [
+                {
+                    "AreaName": "Glittering Cave",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Timeless Temple",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Swamp of Solitude",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Bright Grass",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Luminescent Darkness",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Windy Garden",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Good Sound House",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Consequences of Destruction",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Divine Sanctuary",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Ethereal Horizons",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Interception",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "15.png",
+                        "16.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Keep of the Transcendents",
+                    "Screens": [
+                        "1.png",
+                        "2.png"
+                    ]
+                },
+                {
+                    "AreaName": "222F",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "[Babe] 2",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Utopia",
+            "Areas": [
+                {
+                    "AreaName": "Burned Eden",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Distorted Elysion",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Wind of El Dorado",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Frozen Valhalla",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Reversed Avalon",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Shade of Xanadu",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Dark Atlantis",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Lost Paradise",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Utopia",
+                    "Screens": [
+                        "1.png",
+                        "2.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Back Side of Elysion",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Back to the Babe",
+            "Areas": [
+                {
+                    "AreaName": "The Trench",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Evergreen Heights",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Derelict Museum",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Skies of Helios",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Event Horizon",
+                    "Screens": [
+                        "1.png"
+                    ]
+                },
+                {
+                    "AreaName": "Nostalgic Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Aperture Laboratories",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Northern Ridge",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Leaning Tower of Cryostasis",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Lonely Cabin",
+                    "Screens": [
+                        "1.png"
+                    ]
+                },
+                {
+                    "AreaName": "Tap To Add Text",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Good Job",
+                    "Screens": [
+                        "1.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Ghost of the Immortal Babe",
+            "Areas": [
+                {
+                    "AreaName": "Avernus",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Styx",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Gomorrah",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png"
+                    ]
+                },
+                {
+                    "AreaName": "Sodom",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Library of Alexandria",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Dimensional Rift",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Cursed Citadel",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Ghost Tower",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Yggdrasil",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Olymp",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Immortal Babe",
+            "Areas": [
+                {
+                    "AreaName": "Desert Ruins",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "False Kings Tomb",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Abandoned Heights",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Ascending Abduction",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Unknown",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Crimson Rupture",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Lost Sanctum",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Time Rift",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Tower of Tartarus",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Remember",
+                    "Screens": [
+                        "1.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Immortal Babe+",
+            "Areas": [
+                {
+                    "AreaName": "Deserted Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Weaver_s Nest",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Abaddon_s Heights",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Descending Disruption",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Unshown",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Black Frontier",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Frost Sanctum",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Mime Rift",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Tower of Darkness",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Super Jing World",
+            "Areas": [
+                {
+                    "AreaName": "World 0; Nest .5",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 1; From the Top!",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 2; Memzy Mines",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 3; Phoenixx Mountain",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 4; Ross Rock Desert",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "15.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 5; OGRE Base",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "World 6; Journey's End",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Tyrant Babe",
+            "Areas": [
+                {
+                    "AreaName": "Paradisus Station",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Painted Worlds",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Ecstatic Dream",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Higan",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Brisk Frontier",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Insanity Chamber",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Invisibility",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Disconnected Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Frozen Genesis",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "111F",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Waterfall Babe",
+            "Areas": [
+                {
+                    "AreaName": "Crystal Den",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Fabricated Depths",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Waterfall",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Cave System",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Holo Constructs",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png"
+                    ]
+                },
+                {
+                    "AreaName": "Surveillance Breach",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Moonlight Mansion",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Castle of Time",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Psychedelic Ruin",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Taiga",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Interior; The Noir",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Exterior; The Blizzard",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Lavender Hall",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Recollection",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Light Chamber (Water variation)",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Construction Tower (Water variation)",
+                    "Screens": [
+                        "1.png",
+                        "10.png",
+                        "11.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                }
+            ]
+        }
+    ]
+}
