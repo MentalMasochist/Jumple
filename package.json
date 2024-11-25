@@ -1,13 +1,10 @@
 {
-    "homepage": "http://MentalMasochist.github.io/Jumple",
     "name": "jumple",
     "private": true,
-    "version": "2.0.0",
+    "version": "2.0.1",
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist",
         "build": "vite build",
         "lint": "eslint .",
         "preview": "vite preview"
