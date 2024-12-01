@@ -11,7 +11,7 @@ const roll = {
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
     const screenCap = {
         nexile: 10,
-        custom: 20
+        custom: 21
     }
 
     const [number, setNumber] = useState(1);
