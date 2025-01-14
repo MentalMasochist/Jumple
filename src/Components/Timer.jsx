@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getDate from '../getDate';
+import getDate from '../getDate.js';
 
 const apiDate = await getDate();
 

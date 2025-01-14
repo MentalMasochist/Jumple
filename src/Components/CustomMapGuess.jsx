@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import { Paper, Autocomplete, TextField, Button, Grid2 } from "@mui/material";
 import CustomMapsJSON from '../customMapsJSON.json'
-import screenRoll from "../screenRoll";
-import { useDailyLocalState } from "../CustomHooks";
+import screenRoll from "../ScreenRoll.js";
+import { useDailyLocalState } from "../CustomHooks.js";
 
 
 const initailCustomMapNames = CustomMapsJSON.CustomMaps.map(map => map.MapName);
