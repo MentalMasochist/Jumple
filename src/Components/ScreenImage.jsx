@@ -1,24 +1,19 @@
 import { React } from "react";
-import { ScreenRoll } from "../ScreenRoll";
-import { getSeeds } from "../Seeds.js";
+import screenRoll from "../screenRoll";
 import * as Utils from '../Utils.js';
 import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
+import seeds from "../seeds.js";
 
-
-const { nexileSeeds, customSeeds } = await getSeeds();
 
 const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) => {
 
     const rolls = {
-        nexile: ScreenRoll().NexileRoll.screenPath,
-        custom: ScreenRoll().CustomRoll.screenPath
+        nexile: screenRoll.NexileRoll.screenPath,
+        custom: screenRoll.CustomRoll.screenPath
     };
+
     const img = rolls[jumpleMode];
 
-    const seeds = {
-        nexile: nexileSeeds,
-        custom: customSeeds
-    }
     const seed = seeds[jumpleMode];
 
 

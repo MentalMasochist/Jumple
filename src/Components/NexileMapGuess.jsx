@@ -1,7 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import NexileMapsJSON from '../nexileMapsJSON.json';
-import { ScreenRoll } from "../ScreenRoll.js";
+import screenRoll from "../screenRoll.js";
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
@@ -9,10 +8,10 @@ import { useDailyLocalState } from '../CustomHooks.js';
 
 const nexileMapNames = NexileMapsJSON.NexileMaps.map(map => map.MapName);
 
-const roll = ScreenRoll().NexileRoll;
+const roll = screenRoll.NexileRoll;
 
 const MapGuess = ({ incrementMistake, setGuessStatus }) => {
-    const [buttonStates, setButtonStates] = useDailyLocalState({},"mapGuessButtonStates", "nexile");
+    const [buttonStates, setButtonStates] = useDailyLocalState({}, "mapGuessButtonStates", "nexile");
 
     const handleClick = (map) => {
         if (map == roll.mapName) {

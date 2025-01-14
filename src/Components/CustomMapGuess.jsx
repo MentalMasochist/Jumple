@@ -1,12 +1,12 @@
 import { React, useState } from "react";
-import { Paper, Autocomplete, TextField, Button, Grid2, ButtonGroupContext } from "@mui/material";
+import { Paper, Autocomplete, TextField, Button, Grid2 } from "@mui/material";
 import CustomMapsJSON from '../customMapsJSON.json'
-import { ScreenRoll } from "../ScreenRoll";
+import screenRoll from "../screenRoll";
 import { useDailyLocalState } from "../CustomHooks";
 
 
 const initailCustomMapNames = CustomMapsJSON.CustomMaps.map(map => map.MapName);
-const roll = ScreenRoll().CustomRoll;
+const roll = screenRoll.CustomRoll;
 
 
 const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
@@ -16,7 +16,7 @@ const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     const [buttonColor, setButtonColor] = useDailyLocalState("primary", "mapButtonColorState", "custom");
 
     function guess() {
-        if(value == null) return;
+        if (value == null) return;
 
         if (value == roll.mapName) {
             setGuessStatus(prevState => ({
@@ -33,7 +33,7 @@ const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
     }
 
     return (
-        <Paper variant="outlined" sx={{padding: "10px"}}>
+        <Paper variant="outlined" sx={{ padding: "10px" }}>
             <Grid2 container spacing={0.5}>
                 <Grid2 size={9}>
                     <Autocomplete

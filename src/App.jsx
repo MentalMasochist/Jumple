@@ -21,7 +21,6 @@ const App = () => {
         setJumpleState(newValue);
     }
 
-
     return (
         <>
             <div className="topBar">
@@ -74,7 +73,7 @@ const App = () => {
                         <MainGuessArea jumpleMode={"custom"} />
                     </ThemeProvider>
 
-                    <p style={{color: "rgb(255,255,255,0.2)"}}>Images provided by Owen and JeFi</p>
+                    <p style={{ color: "rgb(255,255,255,0.2)" }}>Images provided by Owen and JeFi</p>
                 </TabPanel>
 
             </TabContext>

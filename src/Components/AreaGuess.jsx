@@ -4,19 +4,19 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import NexileMapsJSON from '../nexileMapsJSON.json';
 import CustomMapsJSON from '../customMapsJSON.json';
-import { ScreenRoll } from "../ScreenRoll";
+import screenRoll from "../screenRoll.js";
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import { useDailyLocalState } from '../CustomHooks.js';
 
 const initialAreas = {
-    nexile: NexileMapsJSON.NexileMaps[ScreenRoll().NexileRoll.mapIndex].Areas.map(area => area.AreaName),
-    custom: CustomMapsJSON.CustomMaps[ScreenRoll().CustomRoll.mapIndex].Areas.map(area => area.AreaName)
+    nexile: NexileMapsJSON.NexileMaps[screenRoll.NexileRoll.mapIndex].Areas.map(area => area.AreaName),
+    custom: CustomMapsJSON.CustomMaps[screenRoll.CustomRoll.mapIndex].Areas.map(area => area.AreaName)
 }
 
 const roll = {
-    nexile: ScreenRoll()["NexileRoll"],
-    custom: ScreenRoll()["CustomRoll"]
+    nexile: screenRoll["NexileRoll"],
+    custom: screenRoll["CustomRoll"]
 }
 
 

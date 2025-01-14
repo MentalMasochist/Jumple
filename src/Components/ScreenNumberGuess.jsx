@@ -1,11 +1,12 @@
 import { React, useEffect, useState } from "react";
 import { Button, Paper, Grid2, Stack } from "@mui/material";
-import { ScreenRoll } from "../ScreenRoll";
+import screenRoll from "../screenRoll";
 import { useDailyLocalState } from '../CustomHooks.js';
 
+
 const roll = {
-    nexile: ScreenRoll()["NexileRoll"],
-    custom: ScreenRoll()["CustomRoll"]
+    nexile: screenRoll["NexileRoll"],
+    custom: screenRoll["CustomRoll"]
 }
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {

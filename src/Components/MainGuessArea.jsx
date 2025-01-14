@@ -2,7 +2,7 @@ import { React } from 'react'
 import NexileMapGuess from "./NexileMapGuess.jsx";
 import AreaGuess from "./AreaGuess.jsx";
 import ScreenNumberGuess from "./ScreenNumberGuess.jsx";
-import { Paper, Grid2 } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import ShareButton from './ShareButton.jsx';
 import ScreenImage from './ScreenImage.jsx';
 import { useDailyLocalState } from '../CustomHooks.js';
@@ -38,22 +38,40 @@ const MainGuessArea = ({ jumpleMode }) => {
     const MapGuess = () => {
         const modeComponents = {
             nexile: <NexileMapGuess incrementMistake={incrementMistake} setGuessStatus={setGuessStatus} />,
-            custom: <CustomMapGuess incrementMistake={incrementMistake} guessStatus={guessStatus} setGuessStatus={setGuessStatus}/>
+            custom: <CustomMapGuess incrementMistake={incrementMistake} guessStatus={guessStatus} setGuessStatus={setGuessStatus} />
         };
-    
+
         return modeComponents[jumpleMode];
     };
 
     return (
         <>
-            <ScreenImage mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState} jumpleMode={jumpleMode} />
+            <ScreenImage
+                mistakeCount={mistakeCount}
+                guessStatus={guessStatus}
+                hardModeState={hardModeState}
+                jumpleMode={jumpleMode}
+            />
 
             <div style={{ display: "flex" }}>
-                <HardModeCheckbox hardModeState={hardModeState} setHardModeState={setHardModeState} guessStatus={guessStatus} />
+                <HardModeCheckbox
+                    hardModeState={hardModeState}
+                    setHardModeState={setHardModeState}
+                    guessStatus={guessStatus}
+                />
 
-                <MistakeCount mistakeCount={mistakeCount} guessStatus={guessStatus} />
+                <MistakeCount
+                    mistakeCount={mistakeCount}
+                    guessStatus={guessStatus}
+                />
 
-                <ShareButton wrongGuesses={wrongGuesses} mistakeCount={mistakeCount} guessStatus={guessStatus} hardModeState={hardModeState} jumpleMode={jumpleMode} />
+                <ShareButton
+                    wrongGuesses={wrongGuesses}
+                    mistakeCount={mistakeCount}
+                    guessStatus={guessStatus}
+                    hardModeState={hardModeState}
+                    jumpleMode={jumpleMode}
+                />
             </div>
 
             <Grid2 container spacing={2} sx={{ maxWidth: "35rem" }}>
@@ -61,10 +79,20 @@ const MainGuessArea = ({ jumpleMode }) => {
                     {MapGuess()}
                 </Grid2>
                 <Grid2 size={6}>
-                    <AreaGuess incrementMistake={incrementMistake} guessStatus={guessStatus} setGuessStatus={setGuessStatus} jumpleMode={jumpleMode} />
+                    <AreaGuess
+                        incrementMistake={incrementMistake}
+                        guessStatus={guessStatus}
+                        setGuessStatus={setGuessStatus}
+                        jumpleMode={jumpleMode}
+                    />
                 </Grid2>
                 <Grid2 size={6}>
-                    <ScreenNumberGuess incrementMistake={incrementMistake} guessStatus={guessStatus} setGuessStatus={setGuessStatus} jumpleMode={jumpleMode} />
+                    <ScreenNumberGuess
+                        incrementMistake={incrementMistake}
+                        guessStatus={guessStatus}
+                        setGuessStatus={setGuessStatus}
+                        jumpleMode={jumpleMode}
+                    />
                 </Grid2>
             </Grid2>
         </>

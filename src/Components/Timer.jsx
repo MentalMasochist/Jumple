@@ -1,32 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import getDate from '../getDate';
+
+const apiDate = await getDate();
 
 const Timer = () => {
     const [timeRemaining, setTimeRemaining] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {
-        const fetchTime = async () => {
-            try {
-                const response = await fetch('https://timeapi.io/api/Time/current/zone?timeZone=UTC');
-                const data = await response.json();
-                updateTimeRemaining(data);
-            } catch (error) {
-                console.error('Error fetching time:', error);
-            }
-        };
+        const now = new Date(Date.UTC(apiDate.year, apiDate.month - 1, apiDate.day, apiDate.hour, apiDate.minute, apiDate.seconds));
+        const nextMidnight = new Date(Date.UTC(apiDate.year, apiDate.month - 1, apiDate.day + 1));
 
-        const updateTimeRemaining = (apiTime) => {
-            const now = new Date(Date.UTC(apiTime.year, apiTime.month - 1, apiTime.day, apiTime.hour, apiTime.minute, apiTime.seconds));
-            const nextMidnight = new Date(Date.UTC(apiTime.year, apiTime.month - 1, apiTime.day + 1));
+        const timeDifference = nextMidnight - now;
+        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeDifference / 1000) % 60);
 
-            const timeDifference = nextMidnight - now;
-            const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
-            const seconds = Math.floor((timeDifference / 1000) % 60);
-
-            setTimeRemaining({ hours, minutes, seconds });
-        };
-
-        fetchTime();
+        setTimeRemaining({ hours, minutes, seconds });
 
         const timerId = setInterval(() => {
             setTimeRemaining((prev) => {
