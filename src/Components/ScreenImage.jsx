@@ -2,7 +2,7 @@ import { React } from "react";
 import screenRoll from "../ScreenRoll.js";
 import * as Utils from '../Utils.js';
 import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
-import seeds from "../seeds.js";
+import seeds from "../Seeds.js";
 
 
 const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) => {

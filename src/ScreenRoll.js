@@ -1,6 +1,6 @@
 import NexileMapsJSON from './nexileMapsJSON.json';
 import CustomMapsJSON from './customMapsJSON.json';
-import seeds from './seeds';
+import seeds from './Seeds';
 
 
 // DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
