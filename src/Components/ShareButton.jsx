@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
+import getDate from "../getDate.js";
 
+const apiDate = await getDate();
 
-const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, jumpleMode, apiDate }) => {
+const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, jumpleMode }) => {
     const [isCoppied, setIsCoppied] = useState(false);
     const mode = {
         nexile: "(Nexile Maps)",
