@@ -1,6 +1,6 @@
 import React from "react";
 import NexileMapsJSON from '../nexileMapsJSON.json';
-import screenRoll from "../screenRoll.js";
+import screenRoll from "../ScreenRoll.js";
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
