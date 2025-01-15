@@ -1,17 +1,17 @@
 import { React, useState } from "react";
 import { Paper, Autocomplete, TextField, Button, Grid2 } from "@mui/material";
 import CustomMapsJSON from '../customMapsJSON.json'
-import screenRoll from "../ScreenRoll.js";
 import { useDailyLocalState } from "../CustomHooks.js";
-
-
-const initailCustomMapNames = CustomMapsJSON.CustomMaps.map(map => map.MapName);
-const roll = screenRoll.CustomRoll;
+import { getScreenRoll } from "../ScreenRoll.js";
 
 
 const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
-    const [value, setValue] = useState(null);
-    const [inputValue, setInputValue] = useState('');
+    const initailCustomMapNames = CustomMapsJSON.CustomMaps.map(map => map.MapName);
+    const roll = getScreenRoll().CustomRoll;
+
+
+    const [value, setValue] = useDailyLocalState(null, "mapValue", "custom");
+    const [inputValue, setInputValue] = useState('', "mapInputValue", "custom");
     const [customMapNames, setCustomMapNames] = useDailyLocalState(initailCustomMapNames, "mapNamesStates", "custom");
     const [buttonColor, setButtonColor] = useDailyLocalState("primary", "mapButtonColorState", "custom");
 
@@ -61,19 +61,31 @@ const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {
                     />
                 </Grid2>
                 <Grid2 size={3}>
-                    <Button
-                        sx={{
-                            height: "100%",
-                            fontFamily: "JKFontMini",
-                            fontSize: "22px",
-                            padding: 0
-                        }}
-                        variant="contained"
-                        color={buttonColor}
-                        onClick={guess}
-                        fullWidth>
-                        Guess map
-                    </Button>
+                    <div className="guessCustomMapButton" data-custom-disable={guessStatus.isMapGuessed} style={{height: "100%"}}>
+                        <Button
+                            sx={{
+                                fontFamily: "JKFontMini",
+                                fontSize: "22px",
+                                height: "100%",
+                                "&.MuiButton-containedSuccess": {
+                                    backgroundColor: "#85e376",
+                                    color: "#11910f",
+                                },
+                                "&.MuiButton-containedError": {
+                                    backgroundColor: "#e37d76",
+                                    color: "#91170f",
+                                    "&:hover": {
+                                        backgroundColor: "#C6615A",
+                                    },
+                                }
+                            }}
+                            variant="contained"
+                            color={buttonColor}
+                            onClick={guess}
+                            fullWidth>
+                            Guess map
+                        </Button>
+                    </div>
                 </Grid2>
             </Grid2>
 

@@ -1,15 +1,17 @@
 import { React, useEffect, useState } from "react";
 import { Button, Paper, Grid2, Stack } from "@mui/material";
-import screenRoll from "../ScreenRoll.js";
 import { useDailyLocalState } from '../CustomHooks.js';
+import { getScreenRoll } from "../ScreenRoll.js";
 
-
-const roll = {
-    nexile: screenRoll["NexileRoll"],
-    custom: screenRoll["CustomRoll"]
-}
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
+    const screenRoll = getScreenRoll();
+
+    const roll = {
+        nexile: screenRoll["NexileRoll"],
+        custom: screenRoll["CustomRoll"]
+    }
+
     const screenCap = {
         nexile: 10,
         custom: 21
@@ -88,13 +90,13 @@ const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jump
                     </Button>
                 </Grid2>
             </Grid2>
-            <Stack direction="row" spacing={1} sx={{ justifyContent: "center", flexWrap: "wrap", marginTop: 1 }}>
+            <Stack direction="row" sx={{ justifyContent: "center", flexWrap: "wrap", marginTop: 1, gap: 0.8 }}>
                 {guessedNumbers.map(number => {
                     return (
                         <Paper sx={{
                             backgroundColor: number.isCorrect ? "#85e376" : '#e37d76',
                             color: number.isCorrect ? "#11910f" : "#91170f",
-                            paddingX: 1.5,
+                            width: "32px",
                             paddingY: 1,
                             fontSize: "20px"
                         }} key={number.number}>{number.number}</Paper>

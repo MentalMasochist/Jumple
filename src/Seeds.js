@@ -1,27 +1,37 @@
 import seedrandom from "seedrandom";
-import getDate from './getDate.js';
+import { getDate } from './getDate.js';
 
-const apiDate = await getDate();
-const date = apiDate.dateTime.slice(0, 10);
+let seeds = null;
 
-const rng = seedrandom(date);
+export function setSeeds(){
+    const apiDate = getDate();
+    const date = apiDate.dateTime.slice(0, 10);
 
-const seeds = {
-    nexile: {
-        randomAreaSeed: rng(),
-        randomScreenSeed: rng(),
-        randomXSeed: rng(),
-        randomYSeed: rng(),
-        randomRotationSeed: rng(),
-    },
+    const rng = seedrandom(date);
 
-    custom: {
-        randomAreaSeed: rng(),
-        randomScreenSeed: rng(),
-        randomXSeed: rng(),
-        randomYSeed: rng(),
-        randomRotationSeed: rng(),
+    seeds = {
+        nexile: {
+            randomAreaSeed: rng(),
+            randomScreenSeed: rng(),
+            randomXSeed: rng(),
+            randomYSeed: rng(),
+            randomRotationSeed: rng(),
+        },
+    
+        custom: {
+            randomAreaSeed: rng(),
+            randomScreenSeed: rng(),
+            randomXSeed: rng(),
+            randomYSeed: rng(),
+            randomRotationSeed: rng(),
+        }
     }
 }
 
-export default seeds;
+export function getSeeds(){
+    if(seeds === null){
+        throw new Error("Seeds not set yet");
+    }
+
+    return seeds;
+}

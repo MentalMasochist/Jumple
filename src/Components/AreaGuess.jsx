@@ -4,31 +4,32 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import NexileMapsJSON from '../nexileMapsJSON.json';
 import CustomMapsJSON from '../customMapsJSON.json';
-import screenRoll from "../ScreenRoll.js";
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import { useDailyLocalState } from '../CustomHooks.js';
-
-const initialAreas = {
-    nexile: NexileMapsJSON.NexileMaps[screenRoll.NexileRoll.mapIndex].Areas.map(area => area.AreaName),
-    custom: CustomMapsJSON.CustomMaps[screenRoll.CustomRoll.mapIndex].Areas.map(area => area.AreaName)
-}
-
-const roll = {
-    nexile: screenRoll["NexileRoll"],
-    custom: screenRoll["CustomRoll"]
-}
-
+import { getScreenRoll } from '../ScreenRoll.js';
 
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
-    const [value, setValue] = useState(null);
-    const [inputValue, setInputValue] = useState('');
+    const screenRoll = getScreenRoll();
+
+    const initialAreas = {
+        nexile: NexileMapsJSON.NexileMaps[screenRoll.NexileRoll.mapIndex].Areas.map(area => area.AreaName),
+        custom: CustomMapsJSON.CustomMaps[screenRoll.CustomRoll.mapIndex].Areas.map(area => area.AreaName)
+    }
+
+    const roll = {
+        nexile: screenRoll["NexileRoll"],
+        custom: screenRoll["CustomRoll"]
+    }
+
+    const [value, setValue] = useDailyLocalState(null, "areaValue", jumpleMode);
+    const [inputValue, setInputValue] = useDailyLocalState('', "areaInputValue", jumpleMode);
     const [guessedAreas, setGuessedAreas] = useDailyLocalState([], "guessedAreas", jumpleMode);
     const [areaNames, setAreaNames] = useDailyLocalState(initialAreas[jumpleMode], "areaNames", jumpleMode);
-    const [disableButton, setDisableButton] = useState(true);
+    const [disableButton, setDisableButton] = useDailyLocalState(true, "areaButtonStatus", jumpleMode);
 
     useEffect(() => {
-        if (value == null) {
+        if (value == null || guessStatus.isAreaGuessed) {
             setDisableButton(true);
         } else {
             setDisableButton(false);
@@ -67,7 +68,7 @@ const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }
             position: "relative",
             filter: guessStatus.isMapGuessed ? "blur(0px)" : "blur(5px)"
         }}
-            variant="outlined" >
+            variant="outlined">
             <Autocomplete
                 value={value}
                 onChange={(event, newValue) => {

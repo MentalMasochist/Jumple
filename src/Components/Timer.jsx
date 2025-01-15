@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import getDate from '../getDate.js';
+import { getDate } from '../getDate';
 
-const apiDate = await getDate();
 
 const Timer = () => {
+    const apiDate = getDate();
+
     const [timeRemaining, setTimeRemaining] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
     useEffect(() => {

@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
-import getDate from "../getDate.js";
+import { getDate } from "../getDate";
 
-const apiDate = await getDate();
 
 const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, jumpleMode }) => {
+    const apiDate = getDate();
+
     const [isCoppied, setIsCoppied] = useState(false);
     const mode = {
         nexile: "(Nexile Maps)",
@@ -32,7 +33,21 @@ const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, j
         <Button
             onClick={clipboardShare}
             variant={isCoppied ? "contained" : "outlined"}
-            sx={{ marginBottom: "0.5rem", fontFamily: "JKFontMini", fontSize: "20px", display: display }}
+            sx={{
+                marginBottom: "0.5rem",
+                fontFamily: "JKFontMini",
+                fontSize: "20px",
+                "&.MuiButton-outlined":{
+                    borderTopLeftRadius: "0",
+                    borderTopRightRadius: "0",
+                },
+                "&.MuiButton-contained":{
+                    borderTop: "none",
+                    borderTopLeftRadius: "0",
+                    borderTopRightRadius: "0",
+                },
+                display: display
+            }}
             disableElevation >copy score</Button>
     )
 }

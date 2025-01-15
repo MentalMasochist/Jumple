@@ -53,15 +53,16 @@ const MainGuessArea = ({ jumpleMode }) => {
                 jumpleMode={jumpleMode}
             />
 
-            <div style={{ display: "flex" }}>
+            <div style={{
+                display: "flex",
+                zIndex: 1,
+                width: "100%",
+                justifyContent: "center",
+                gap: "0.5rem",
+            }}>
                 <HardModeCheckbox
                     hardModeState={hardModeState}
                     setHardModeState={setHardModeState}
-                    guessStatus={guessStatus}
-                />
-
-                <MistakeCount
-                    mistakeCount={mistakeCount}
                     guessStatus={guessStatus}
                 />
 
@@ -72,6 +73,13 @@ const MainGuessArea = ({ jumpleMode }) => {
                     hardModeState={hardModeState}
                     jumpleMode={jumpleMode}
                 />
+
+                <MistakeCount
+                    mistakeCount={mistakeCount}
+                    guessStatus={guessStatus}
+                />
+
+
             </div>
 
             <Grid2 container spacing={2} sx={{ maxWidth: "35rem" }}>

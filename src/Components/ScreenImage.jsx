@@ -1,11 +1,12 @@
 import { React } from "react";
-import screenRoll from "../ScreenRoll.js";
 import * as Utils from '../Utils.js';
 import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
-import seeds from "../Seeds.js";
-
+import { getScreenRoll } from "../ScreenRoll.js";
+import { getSeeds } from "../Seeds.js";
 
 const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) => {
+    const screenRoll = getScreenRoll();
+    const seeds = getSeeds();
 
     const rolls = {
         nexile: screenRoll.NexileRoll.screenPath,
@@ -13,9 +14,7 @@ const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) =
     };
 
     const img = rolls[jumpleMode];
-
     const seed = seeds[jumpleMode];
-
 
     const initialZoom = 10;
     const { size: initialSize, minxvalue, maxxvalue } = Utils.calculateDimensions(initialZoom);
@@ -92,7 +91,6 @@ const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) =
             }}>
             </div>
         </div>
-
     )
 }
 

@@ -1,16 +1,18 @@
 import React from "react";
 import NexileMapsJSON from '../nexileMapsJSON.json';
-import screenRoll from "../ScreenRoll.js";
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
 import { useDailyLocalState } from '../CustomHooks.js';
+import { getScreenRoll } from "../ScreenRoll.js";
 
-const nexileMapNames = NexileMapsJSON.NexileMaps.map(map => map.MapName);
-
-const roll = screenRoll.NexileRoll;
 
 const MapGuess = ({ incrementMistake, setGuessStatus }) => {
+    const nexileMapNames = NexileMapsJSON.NexileMaps.map(map => map.MapName);
+
+    const roll = getScreenRoll().NexileRoll;
+
+
     const [buttonStates, setButtonStates] = useDailyLocalState({}, "mapGuessButtonStates", "nexile");
 
     const handleClick = (map) => {
@@ -19,8 +21,7 @@ const MapGuess = ({ incrementMistake, setGuessStatus }) => {
             nexileMapNames.forEach(name => {
                 newButtonStates[name] = {
                     color: name === roll.mapName ? "success" : "error",
-                    customDisable: "true",
-                    variant: name === roll.mapName ? "contained" : "outlined"
+                    customDisable: "true"
                 };
             });
             setButtonStates(newButtonStates);
@@ -51,12 +52,20 @@ const MapGuess = ({ incrementMistake, setGuessStatus }) => {
                     return (
                         <div key={map} className="guessMapButton" data-custom-disable={buttonStates[map]?.customDisable || "false"}>
                             <Button
-                                variant={buttonStates[map]?.variant || "outlined"}
+                                variant="contained"
                                 color={buttonStates[map]?.color || "primary"}
                                 onClick={() => handleClick(map)}
                                 sx={{
                                     fontFamily: 'JKFontBold',
-                                    fontSize: '120%'
+                                    fontSize: '120%',
+                                    "&.MuiButton-containedSuccess": {
+                                        backgroundColor: "#85e376",
+                                        color: "#11910f"
+                                    },
+                                    "&.MuiButton-containedError": {
+                                        backgroundColor: "#e37d76",
+                                        color: "#91170f"
+                                    }
                                 }}
                             >
                                 {map}
