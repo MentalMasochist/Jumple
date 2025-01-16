@@ -6,8 +6,8 @@ let seeds = null;
 export function setSeeds(){
     const apiDate = getDate();
     const date = apiDate.dateTime.slice(0, 10);
-
-    const rng = seedrandom(date);
+    const rng = seedrandom(date + 123);
+    //we do a little seed change
 
     seeds = {
         nexile: {
