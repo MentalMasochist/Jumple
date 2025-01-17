@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Run the script
-        run: node ../../src/JsHelperScripts/loadPlayerList.js
+        run: loadPlayerList.js
 
       - name: Commit and push
         run: |
