@@ -68,7 +68,7 @@ const App = () => {
                     </Grid2>
                     <Grid2 size={4}>
                         <p className="signature">by Mental Masochist</p>
-                        <div className="fontguy"><p style={{margin: 0}}>fonts by <a href="https://fontenddev.com" target="_blank">Font End Dev</a></p></div>
+                        <div className="fontguy"><p style={{ margin: 0 }}>fonts by <a href="https://fontenddev.com" target="_blank">Font End Dev</a></p></div>
                     </Grid2>
                 </Grid2>
             </div>
@@ -82,6 +82,10 @@ const App = () => {
                             fontFamily: 'JKFontBold'
                         }} />
                         <Tab value="Custom maps" label={"Custom maps"} sx={{
+                            color: "white",
+                            fontFamily: 'JKFontBold'
+                        }} />
+                        <Tab value="Src edition" label={"Src edition"} sx={{
                             color: "white",
                             fontFamily: 'JKFontBold'
                         }} />
@@ -112,6 +116,15 @@ const App = () => {
                     <p style={{ color: "rgb(255,255,255,0.2)" }}>Images provided by Owen and JeFi</p>
                 </TabPanel>
 
+                <TabPanel value={"Src edition"} sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: 0
+                }}>
+                    test
+
+                </TabPanel>
             </TabContext>
         </>
     )
