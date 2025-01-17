@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Paper, Autocomplete, TextField, Button, Grid2 } from "@mui/material";
 import CustomMapsJSON from '../customMapsJSON.json'
-import { useDailyLocalState } from "../customHooks.js";
+import { useDailyLocalState } from "../JsHelperScripts/customHooks.js";
 import { getScreenRoll } from "../ScreenRoll.js";
 
 

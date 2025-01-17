@@ -6,7 +6,7 @@ import NexileMapsJSON from '../nexileMapsJSON.json';
 import CustomMapsJSON from '../customMapsJSON.json';
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
-import { useDailyLocalState } from '../customHooks.js';
+import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
 import { getScreenRoll } from '../ScreenRoll.js';
 
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
