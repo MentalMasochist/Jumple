@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { Button, Paper, Grid2, Stack } from "@mui/material";
-import { useDailyLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../customHooks.js';
 import { getScreenRoll } from "../ScreenRoll.js";
 
 

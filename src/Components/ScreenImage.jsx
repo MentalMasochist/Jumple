@@ -1,6 +1,6 @@
 import { React } from "react";
 import * as Utils from '../Utils.js';
-import { useOnUpdate, useDailyLocalState } from "../CustomHooks.js";
+import { useOnUpdate, useDailyLocalState } from "../customHooks.js";
 import { getScreenRoll } from "../ScreenRoll.js";
 import { getSeeds } from "../Seeds.js";
 

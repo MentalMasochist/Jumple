@@ -5,7 +5,7 @@ import ScreenNumberGuess from "./ScreenNumberGuess.jsx";
 import { Grid2 } from "@mui/material";
 import ShareButton from './ShareButton.jsx';
 import ScreenImage from './ScreenImage.jsx';
-import { useDailyLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../customHooks.js';
 import HardModeCheckbox from './HardModeCheckbox.jsx';
 import MistakeCount from './MistakeCount.jsx';
 import CustomMapGuess from './CustomMapGuess.jsx';

@@ -3,7 +3,7 @@ import NexileMapsJSON from '../nexileMapsJSON.json';
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
-import { useDailyLocalState } from '../CustomHooks.js';
+import { useDailyLocalState } from '../customHooks.js';
 import { getScreenRoll } from "../ScreenRoll.js";
 
 
