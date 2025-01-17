@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
 import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
-import { getScreenRoll } from "../JsHelperScripts/ScreenRoll.js";
+import { getScreenRoll } from "../JsHelperScripts/screenRoll.js";
 
 
 const MapGuess = ({ incrementMistake, setGuessStatus }) => {

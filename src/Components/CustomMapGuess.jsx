@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import { Paper, Autocomplete, TextField, Button, Grid2 } from "@mui/material";
 import CustomMapsJSON from '../jsonLists/customMapsJSON.json';
 import { useDailyLocalState } from "../JsHelperScripts/customHooks.js";
-import { getScreenRoll } from "../JsHelperScripts/ScreenRoll.js";
+import { getScreenRoll } from "../JsHelperScripts/screenRoll.js";
 
 
 const CustomMapGuess = ({ incrementMistake, guessStatus, setGuessStatus }) => {

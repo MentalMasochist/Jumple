@@ -7,7 +7,7 @@ import CustomMapsJSON from '../jsonLists/customMapsJSON.json';
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
-import { getScreenRoll } from '../JsHelperScripts/ScreenRoll.js';
+import { getScreenRoll } from '../JsHelperScripts/screenRoll.js';
 
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
     const screenRoll = getScreenRoll();
