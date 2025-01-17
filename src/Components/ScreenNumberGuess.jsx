@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { Button, Paper, Grid2, Stack } from "@mui/material";
 import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
-import { getScreenRoll } from "../ScreenRoll.js";
+import { getScreenRoll } from "../JsHelperScripts/ScreenRoll.js";
 
 
 const ScreenNumberGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {

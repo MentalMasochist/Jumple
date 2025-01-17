@@ -1,13 +1,13 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import NexileMapsJSON from '../nexileMapsJSON.json';
-import CustomMapsJSON from '../customMapsJSON.json';
+import NexileMapsJSON from '../jsonLists/nexileMapsJSON.json';
+import CustomMapsJSON from '../jsonLists/customMapsJSON.json';
 import { Paper, Stack } from "@mui/material";
 import { Button } from "@mui/material";
 import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
-import { getScreenRoll } from '../ScreenRoll.js';
+import { getScreenRoll } from '../JsHelperScripts/ScreenRoll.js';
 
 const AreaGuess = ({ incrementMistake, guessStatus, setGuessStatus, jumpleMode }) => {
     const screenRoll = getScreenRoll();

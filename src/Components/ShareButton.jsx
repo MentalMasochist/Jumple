@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@mui/material";
-import { getDate } from "../getDate";
+import { getDate } from "../JsHelperScripts/getDate";
 
 
 const ShareButton = ({ guessStatus, wrongGuesses, mistakeCount, hardModeState, jumpleMode }) => {

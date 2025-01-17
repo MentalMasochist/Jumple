@@ -1,5 +1,5 @@
-import { setSeeds } from "./Seeds";
-import { setScreenRoll } from "./ScreenRoll";
+import { setSeeds } from "./seeds";
+import { setScreenRoll } from "./screenRoll";
 
 let cachedDate = null;
 

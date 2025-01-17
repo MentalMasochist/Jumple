@@ -1,10 +1,10 @@
 import React from "react";
-import NexileMapsJSON from '../nexileMapsJSON.json';
+import NexileMapsJSON from '../jsonLists/nexileMapsJSON.json';
 import { Button } from "@mui/material";
 import { Stack } from "@mui/material";
 import { Paper } from "@mui/material";
 import { useDailyLocalState } from '../JsHelperScripts/customHooks.js';
-import { getScreenRoll } from "../ScreenRoll.js";
+import { getScreenRoll } from "../JsHelperScripts/ScreenRoll.js";
 
 
 const MapGuess = ({ incrementMistake, setGuessStatus }) => {

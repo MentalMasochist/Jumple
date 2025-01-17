@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: JKfontBold;
-    src: url(./ttf_litter_lover2_bold.ttf);
+    src: url(./fonts/ttf_litter_lover2_bold.ttf);
 }
 
 @font-face {
     font-family: JKFontMini;
-    src: url(./ttf_entercommand_bold.ttf);
+    src: url(./fonts/ttf_entercommand_bold.ttf);
 }
 
 

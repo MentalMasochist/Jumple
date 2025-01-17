@@ -7,7 +7,7 @@ import { Grid2, Tab, CircularProgress } from "@mui/material";
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import { getDate, fetchDate } from "./getDate";
+import { getDate, fetchDate } from "./JsHelperScripts/getDate";
 
 const darkTheme = createTheme({
     palette: {
@@ -67,7 +67,7 @@ const App = () => {
                         <p className="logo">JUMPLE</p>
                     </Grid2>
                     <Grid2 size={4}>
-                        <p className="signature">by Mental Masochist</p>
+                        <p className="signature">by Mental Masochist production test</p>
                         <div className="fontguy"><p style={{margin: 0}}>fonts by <a href="https://fontenddev.com" target="_blank">Font End Dev</a></p></div>
                     </Grid2>
                 </Grid2>

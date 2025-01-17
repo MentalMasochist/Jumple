@@ -1,8 +1,8 @@
 import { React } from "react";
-import * as Utils from '../Utils.js';
+import * as Utils from '../JsHelperScripts/utils.js';
 import { useOnUpdate, useDailyLocalState } from "../JsHelperScripts/customHooks.js";
-import { getScreenRoll } from "../ScreenRoll.js";
-import { getSeeds } from "../Seeds.js";
+import { getScreenRoll } from "../JsHelperScripts/screenRoll.js";
+import { getSeeds } from "../JsHelperScripts/seeds.js";
 
 const ScreenImage = ({ mistakeCount, guessStatus, hardModeState, jumpleMode }) => {
     const screenRoll = getScreenRoll();

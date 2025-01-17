@@ -1,6 +1,6 @@
-import NexileMapsJSON from './nexileMapsJSON.json';
-import CustomMapsJSON from './customMapsJSON.json';
-import { getSeeds } from './Seeds';
+import NexileMapsJSON from '../jsonLists/nexileMapsJSON.json'
+import CustomMapsJSON from '../jsonLists/customMapsJSON.json'
+import { getSeeds } from './seeds';
 
 let screenRoll = null;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Paper } from "@mui/material";
-import * as Utils from '../Utils.js';
+import * as Utils from '../JsHelperScripts/utils.js';
 
 const MistakeCount = ({ mistakeCount, guessStatus }) => {
     return (
