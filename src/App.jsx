@@ -67,7 +67,7 @@ const App = () => {
                         <p className="logo">JUMPLE</p>
                     </Grid2>
                     <Grid2 size={4}>
-                        <p className="signature">by Mental Masochist production test</p>
+                        <p className="signature">by Mental Masochist</p>
                         <div className="fontguy"><p style={{margin: 0}}>fonts by <a href="https://fontenddev.com" target="_blank">Font End Dev</a></p></div>
                     </Grid2>
                 </Grid2>
