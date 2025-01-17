@@ -155,7 +155,7 @@ async function getRuns() {
 
         const playerJSONstring = JSON.stringify(Array.from(players.values()), null, 2);
 
-        fs.writeFile('../jsonLists/playerList.json', playerJSONstring, (err) => {
+        fs.writeFile('src/jsonLists/playerList.json', playerJSONstring, (err) => {
             if (err) {
                 throw new Error(err);
             } else {
