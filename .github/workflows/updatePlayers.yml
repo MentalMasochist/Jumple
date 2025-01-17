@@ -1,9 +1,11 @@
 name: Update Players JSON Daily
 
+
 on:
-  schedule:
-    - cron: "58 21 * * *" 
-  workflow_dispatch: 
+    push:
+      branches:
+        - srcUpdate
+  
 
 jobs:
   updatePlayers:
