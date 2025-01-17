@@ -5,6 +5,7 @@ on:
     push:
       branches:
         - srcUpdate
+    workflow_dispatch:
   
 
 jobs:
