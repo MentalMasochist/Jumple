@@ -22652,11 +22652,11 @@
     "id": "jmo27448",
     "name": "control_speed",
     "pb": {
-      "time": 258.281,
-      "date": "2025-01-07",
+      "time": 257.312,
+      "date": "2025-01-17",
       "cycle": "0"
     },
-    "peakPlace": 37,
+    "peakPlace": 32,
     "firstRunDate": "2024-01-02",
     "nationality": {
       "name": "Belarus",
