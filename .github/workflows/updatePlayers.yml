@@ -2,9 +2,9 @@ name: Update Players JSON Daily
 
 
 on:
-    push:
-      branches:
-        - srcUpdate
+    schedule:
+    - cron: "54 * * * *"
+
     workflow_dispatch:
   
 
