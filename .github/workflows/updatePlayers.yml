@@ -3,7 +3,7 @@ name: Update Players JSON Daily
 
 on:
     schedule:
-        - cron: "57 * * * *"
+        - cron: "58 * * * *"
 
     workflow_dispatch:
   
