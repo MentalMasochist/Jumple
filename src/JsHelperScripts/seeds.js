@@ -6,7 +6,7 @@ let seeds = null;
 export function setSeeds(){
     const apiDate = getDate();
     const date = apiDate.dateTime.slice(0, 10);
-    const rng = seedrandom(date + 123);
+    const rng = seedrandom(date + 289);
     //we do a little seed change
 
     seeds = {
@@ -24,7 +24,9 @@ export function setSeeds(){
             randomXSeed: rng(),
             randomYSeed: rng(),
             randomRotationSeed: rng(),
-        }
+        },
+
+        src: rng()
     }
 }
 

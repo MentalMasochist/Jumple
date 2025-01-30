@@ -153,7 +153,12 @@ async function getRuns() {
 
         await updatePlayerMaps(players);
 
-        const playerJSONstring = JSON.stringify(Array.from(players.values()), null, 2);
+        const playersRankSorted =  Array.from(players.values()).sort((a, b) => a.pb.time - b.pb.time);
+        playersRankSorted.forEach((player, index) => {
+            player.rank = index + 1;
+        })
+
+        const playerJSONstring = JSON.stringify(playersRankSorted, null, 2);
 
         fs.writeFile('src/jsonLists/playerList.json', playerJSONstring, (err) => {
             if (err) {

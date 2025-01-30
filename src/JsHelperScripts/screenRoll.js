@@ -6,7 +6,7 @@ let screenRoll = null;
 
 export function setScreenRoll() {
     // DELETE "Jumple/" FOR DEPLOYMENT FOR WHATEVER THE FUCK REASON
-    const retardMoment = "";
+    const retardMoment = "Jumple/";
 
 
     const NexileMaps = NexileMapsJSON.NexileMaps;

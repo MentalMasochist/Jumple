@@ -31,10 +31,14 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
-          git add src/jsonLists/playerList.json
-          git commit -m "Auto update player list"
-          git push origin srcUpdate
+            git config user.name "GitHub Actions Bot"
+            git config user.email "actions@github.com"
+            if [[ $(git status --porcelain src/jsonLists/playerList.json) ]]; then
+              git add src/jsonLists/playerList.json
+              git commit -m "Auto update player list"
+              git push origin srcUpdate
+            else
+              echo "No changes to commit."
+            fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

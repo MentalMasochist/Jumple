@@ -8,6 +8,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import { getDate, fetchDate } from "./JsHelperScripts/getDate";
+import MainSrcGuessArea from "./SrcComponents/MainSrcGuessArea";
 
 const darkTheme = createTheme({
     palette: {
@@ -17,7 +18,7 @@ const darkTheme = createTheme({
 
 
 const App = () => {
-    const [jumpleState, setJumpleState] = useState('Nexile maps');
+    const [jumpleState, setJumpleState] = useState('Src edition');
     const [isDateFetched, setDateIsFetched] = useState(false);
     const hasFetched = useRef(false);
 
@@ -122,7 +123,7 @@ const App = () => {
                     alignItems: "center",
                     padding: 0
                 }}>
-                    test
+                    <MainSrcGuessArea />
 
                 </TabPanel>
             </TabContext>
