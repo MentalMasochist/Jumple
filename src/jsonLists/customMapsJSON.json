@@ -2458,6 +2458,362 @@
                     ]
                 }
             ]
+        },
+        {
+            "MapName": "Babe of Exile",
+            "Areas": [
+                {
+                    "AreaName": "Nostalgic Nexus",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png"
+                    ]
+                },
+                {
+                    "AreaName": "Subspace Spire",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png"
+                    ]
+                },
+                {
+                    "AreaName": "Domestic Downpour",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Krill Kingdom",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png"
+                    ]
+                },
+                {
+                    "AreaName": "Subspace Spire Two",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png"
+                    ]
+                },
+                {
+                    "AreaName": "Enigmatic Escalators",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Foreboding Fog",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Gooey Grotto",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Ashen Abbey",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Scribble Society",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Luminous Lair",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Heavenly Hurdle",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png",
+                        "9.png"
+                    ]
+                },
+                {
+                    "AreaName": "Subspace Spire Three",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Recollection Reverie",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png"
+                    ]
+                },
+                {
+                    "AreaName": "Transcended Tower",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Infinite Incline",
+                    "Screens": [
+                        "01.png",
+                        "02.png",
+                        "03.png",
+                        "04.png",
+                        "05.png",
+                        "06.png",
+                        "07.png",
+                        "08.png",
+                        "09.png",
+                        "10.png",
+                        "11.png",
+                        "12.png",
+                        "13.png",
+                        "14.png",
+                        "15.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Babe of Fate",
+            "Areas": [
+                {
+                    "AreaName": "Cold Pit",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png"
+                    ]
+                },
+                {
+                    "AreaName": "Floating Mansions",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Stellar Corridor",
+                    "Screens": [
+                        "01.png",
+                        "02.png",
+                        "03.png",
+                        "04.png",
+                        "05.png",
+                        "06.png",
+                        "07.png",
+                        "08.png",
+                        "09.png",
+                        "10.png"
+                    ]
+                },
+                {
+                    "AreaName": "Silent Realm",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "Cybernetic Metropolis",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Shambhala",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Shrine of Tears",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Tower of Doomsday",
+                    "Screens": [
+                        "01.png",
+                        "02.png",
+                        "03.png",
+                        "04.png",
+                        "05.png",
+                        "06.png",
+                        "07.png",
+                        "08.png",
+                        "09.png",
+                        "10.png"
+                    ]
+                }
+            ]
+        },
+        {
+            "MapName": "Sisters of Space",
+            "Areas": [
+                {
+                    "AreaName": "Colossal Jungle",
+                    "Screens": [
+                        "01.png",
+                        "02.png",
+                        "03.png",
+                        "04.png",
+                        "05.png",
+                        "06.png",
+                        "07.png",
+                        "08.png",
+                        "09.png",
+                        "10.png",
+                        "11.png",
+                        "12.png"
+                    ]
+                },
+                {
+                    "AreaName": "Rigid Airships",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "Space Debris",
+                    "Screens": [
+                        "1.png",
+                        "2.png",
+                        "3.png",
+                        "4.png",
+                        "5.png",
+                        "6.png",
+                        "7.png",
+                        "8.png"
+                    ]
+                },
+                {
+                    "AreaName": "The Red Ascent",
+                    "Screens": [
+                        "01.png",
+                        "02.png",
+                        "03.png",
+                        "04.png",
+                        "05.png",
+                        "06.png",
+                        "07.png",
+                        "08.png",
+                        "09.png",
+                        "10.png"
+                    ]
+                }
+            ]
         }
     ]
 }
